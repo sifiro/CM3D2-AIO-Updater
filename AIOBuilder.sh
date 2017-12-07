@@ -19,6 +19,7 @@ function clean(){
 if [ -v $tmp/data/GameData/paths.dat];then rm $tmp/data/GameData/paths.dat;
 fi
 if [ -v $tmp/data/GameData/prioritymaterial.arc];then rm $tmp/data/GameData/prioritymaterial.arc;
+fi
 ##regexp ideal "/(?!^0,0)0,0,)/\n0,0,/gs"
 sed -i 's/0,0,/\n0,0,/g' $tmp/update.lst
 ## Not TESTED, optionally you can use a text editor and remplace \n\n to \n or \r\n\r\n to \r\n
